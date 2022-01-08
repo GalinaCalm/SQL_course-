@@ -4,28 +4,28 @@ From employees
 Where first_name like 'David'; 
 -- или first_name = 'David'
 
---Ïîëó÷èòå ñïèñîê âñåõ ñîòðóäíèêîâ, ó êîòîðûõ job_id ðàâåí FI_ACCOUNT
+--Получите список всех сотрудников, у которых job_id равен FI_ACCOUNT
 Select *
 From employees
 Where job_id  like 'FI_ACCOUNT'; 
--- èëè job_id = 'FI_ACCOUNT'
+-- или job_id = 'FI_ACCOUNT'
 
---Âûâåäèòå èíôîðìàöèþ î èìåíè, ôàìèëèè, ç/ï è íîìåðå äåïàðòàìåíòà
---äëÿ ñîòðóäíèêîâ èç 50ãî äåïàðòàìåíòà ñ çàðïëàòîé, áîëüøåé 4000.
+--Выведите информацию о имени, фамилии, з/п и номере департамента
+--для сотрудников из 50го департамента с зарплатой, большей 4000.
 Select first_name, last_name, salary, department_id
 From employees
 Where department_id like '50' and salary > 4000; 
--- èëè department_id = 50
+-- или department_id = 50
 
---Ïîëó÷èòå ñïèñîê âñåõ ñîòðóäíèêîâ, êîòîðûå ðàáîòàþò èëè â 20ì, èëè â
---30ì äåïàðòàìåíòå
+--Получите список всех сотрудников, которые работают или в 20м, или в
+--30м департаменте
 Select *
 From employees
 Where department_id in (20,30);
--- èëè department_id=20 or department_id=30
+-- или department_id=20 or department_id=30
 
---Ïîëó÷èòå ñïèñîê âñåõ ñîòðóäíèêîâ, ó êîòîðûõ âòîðàÿ è ïîñëåäíÿÿ áóêâà
---â èìåíè ðàâíà 'a'.
+--Получите список всех сотрудников, у которых вторая и последняя буква
+--в имени равна 'a'.
 Select *
 From employees
 Where first_name like '_a%a';
