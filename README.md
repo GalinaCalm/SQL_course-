@@ -1,2 +1,4 @@
 # SQL_course-
-https://www.udemy.com/course/sql-oracle-certification/
+Выполенные задания по курсу "SQL для начинающих: с нуля до сертификата Oracle"
+( https://www.udemy.com/course/sql-oracle-certification/ ) 
+ 
