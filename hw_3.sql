@@ -72,7 +72,7 @@ Where first_name like '%\%%' escape '\';
 --Выведите информацию о job_id, имене и з/п для работников, рабочий
 --id которых больше или равен 120 и job_id не равен IT_PROG.
 --Отсортируйте строки по job_id (возрастающий порядок) и именам
---(убывающий порядок)..
+--(убывающий порядок)
 Select employee_id, job_id, first_name, salary
 From employees
 Where employee_id >=120 and job_id not like 'IT_PROG' 
